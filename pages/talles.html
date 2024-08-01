@@ -7,18 +7,18 @@
     <title>Asteria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <header class="encabezado">
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <header class="text-center">
         <h1>Asteria</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Asteria</a>
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="./productos.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Anillos</a></li>
-                                <li><a class="dropdown-item" href="#">Collares</a></li>
+                                <li><a class="dropdown-item" aria-disabled="true" href="#">Anillos</a></li>
+                                <li><a class="dropdown-item" aria-disabled="true" href="#">Aros</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -45,103 +47,36 @@
                             <a class="nav-link active" href="./talles.html">Talles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page" aria-disabled="true" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contactos.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" aria-disabled="true" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
+        <h2>Cómo obtener la medida de talle de anillo</h2>
+        <p>Sigue estos pasos sencillos.</p>
     </header>
-
-    <main>
-        <section>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/anillos(1).jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/arostransparentes(2).jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/arosderretidos(3).jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+    <main class="talles">
+        <div class="step text-center">
+            <img src="../img/medidadeanillo.jpg" alt="medida de anillo" class="img-fluid mx-auto">
+            <div class="step-description">
+                <h2>Pasos</h2>
+                <ol class="text-start mx-auto" style="max-width: 600px;">
+                    <li>Toma un anillo que se ajuste al dedo de la mano donde se vaya a usar el anillo. Un buen ajuste se da cuando sientes que entra y sale sin incomodidad, pero no queda suelto cuando mueves la mano.</li>
+                    <li>Cuando encuentres un anillo indicado, busca una hoja blanca, luego toma un lápiz y dibuja el contorno interno del anillo. Te quedará la silueta interna del anillo dibujada en la hoja, que es una forma similar a un círculo.</li>
+                    <li>Después usa una regla para medir el diámetro exacto en milímetros de esta forma circular que dibujaste en el papel.</li>
+                </ol>
             </div>
-        </section>
-
-        <!-- Sección de pasos -->
-        <section class="steps">
-            <div class="container">
-                <div class="step row">
-                    <div class="col-md-4">
-                        <img src="paso1.jpg" class="img-fluid" alt="Paso 1">
-                    </div>
-                    <div class="col-md-8 step-description">
-                        <h2>Paso 1</h2>
-                        <p>Descripción del primer paso.</p>
-                    </div>
-                </div>
-                <div class="step row">
-                    <div class="col-md-4">
-                        <img src="paso2.jpg" class="img-fluid" alt="Paso 2">
-                    </div>
-                    <div class="col-md-8 step-description">
-                        <h2>Paso 2</h2>
-                        <p>Descripción del segundo paso.</p>
-                    </div>
-                </div>
-                <div class="step row">
-                    <div class="col-md-4">
-                        <img src="paso3.jpg" class="img-fluid" alt="Paso 3">
-                    </div>
-                    <div class="col-md-8 step-description">
-                        <h2>Paso 3</h2>
-                        <p>Descripción del tercer paso.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
-
-    <footer class="pie">
+    <footer class="text-center mt-4">
         <p>asteria@contacto.com.ar</p>
     </footer>
 </body>

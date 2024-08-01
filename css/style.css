@@ -110,21 +110,21 @@ button:hover {
 }
 .step {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
     padding: 50px;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
 }
 .step img {
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 20px;
+    margin: 20px 0;
 }
 .step-description {
     text-align: center;
@@ -133,12 +133,11 @@ button:hover {
     margin: 0;
     font-size: 1.5em;
     color: #333;
-    text-align: center;
 }
-.step-description p {
+.step-description p, .step-description ol {
     margin: 10px 0 0;
     color: #555;
-    text-align: center;
+    text-align: left;
 }
 .nosotros {
     width: 100%;
@@ -153,9 +152,14 @@ h4 {
 }
 
 /*!------FOOTER------*/
-footer p {
-    text-align: center;
+footer {
+    padding: 20px;
+    background-color: #FFFBF7;
 }
+footer p {
+    margin: 0;
+}
+
 
 /*!------MEDIA QUERIES------*/
 @media screen and (max-width: 850px) {
@@ -169,12 +173,10 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
     }
     .step {
-        flex-direction: column;
         padding: 30px;
     }
-    .step img {
-        width: 100%;
-        margin: 0;
+    .step-description h2 {
+        font-size: 1.2em;
     }
 }
 
@@ -191,9 +193,8 @@ footer p {
     .step {
         padding: 20px;
     }
-    .step img {
-        width: 100%;
-        margin: 0;
+    .step-description h2 {
+        font-size: 1em;
     }
     button {
         padding: 8px 16px;
